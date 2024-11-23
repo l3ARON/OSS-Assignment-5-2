@@ -4,14 +4,14 @@ import axios from "axios";
 import "./ShowList.css";
 
 function ShowList() {
-    const [data, setData] = useState([]); // 가져온 데이터 상태
+    const [data, setData] = useState([]); // 가져온 데이터 
 
     // 데이터 가져오기 함수
     const getTest = () => {
         axios
             .get("https://672818aa270bd0b975544f46.mockapi.io/api/v1/players")
             .then((response) => {
-                console.log(JSON.stringify(response.data)); // 가져온 데이터 콘솔 출력
+                console.log(JSON.stringify(response.data)); // 가져온 데이터 출력
                 setData(response.data); // 데이터 상태 업데이트
             })
             .catch((error) => {
