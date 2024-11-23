@@ -1,0 +1,50 @@
+table {
+    border-collapse: collapse;
+    width: 70%;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    width: 200px;
+}
+
+input {
+    margin-top: 20px;
+    padding: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.div_first2{
+    margin: 0;
+    margin-top: 10px;
+    position: sticky;
+    top: 0px; /* 도달했을때 고정시킬 위치 */
+    padding: 5px;
+    background-color: white;
+    border: 1px solid;
+    z-index: 10;
+}
+
+.link-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.link-button:hover {
+    background-color: #0056b3;
+}
+

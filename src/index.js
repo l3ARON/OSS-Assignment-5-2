@@ -1,11 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import ShowList from './component/Pages/ShowList';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-const myComponent = <ShowList />;
+import ShowList from './component/ShowList';
+import UpdatePage from './component/UpdatePage';
+import AddPage from './component/AddPage';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-root.render(myComponent);
-
+root.render(
+<Router>
+    <Routes>
+        <Route path="/" element={<ShowList />} />
+        <Route path="/list" element={<ShowList />} />
+        <Route path="/update/:id" element={<UpdatePage />} />
+        <Route path="/add" element={<AddPage />} />
+    </Routes>
+</Router>
+);
